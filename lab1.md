@@ -1,5 +1,4 @@
-# Lab 1
-## Lab Environment Setup
+# Lab 1 - Lab Environment Setup
 
 ## Points of interest
 
@@ -38,6 +37,7 @@ To get to virtual machines, go to the VMs and Templates tab at the top left.  Th
 
 ### ping
 A ping command is used to test connectivity.  It sends simple packets between two systems using the ICMP protocol.  It can then keep track of how many packets made it to and from the destination, or whether the destination was reachable at all.
+
 **-n** An option that takes a whole positive number as a parameter to specify the number of packets to be sent and counted.
 
 
