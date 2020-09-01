@@ -1,5 +1,7 @@
 # Lab 1 - Lab Environment Setup
 
+<img src="Images/Lab1_diagram" alt="lab 1 network diagram" />
+
 ## Points of interest
 
 ### vSphere
