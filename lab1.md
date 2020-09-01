@@ -8,12 +8,25 @@ vSphere is the more web-compatible version of VMWare Workstation.  It is used to
 To get to virtual machines, go to the VMs and Templates tab at the top left.  There you will find any VMs you have or that have been created for you.  These can be powered on/off, suspended, and configured in any number of network nad hardware settings, making them very useful for networking operations testing and learning.
 
 ### fw01
+In the lab, one VM used was titled fw01.  It was a pfSense firewall that also served to provide routing between our local LAN and WAN.  One of the first steps was to set this up so that the packets sent from the end device on the LAN could actually make it out and access the SYS255 network, through which the packets could later be routed out onto the cyber network and access the internet.  The first step was to set up the two networks for this VM by going to "settings" from the vSphere page.  Frome there, it was virtually "cabled" to both the LAN and the WAN.  Upon startup, the VM then presented a list of options to configure the firewall, the details of which are included in the "Network Configurations" section of this document.
 
 
-### Network Configurations
+### Network & Server Configurations
+In this lab, there were a total of three networks provided, plus the internet.  From the top down, those networks are as follows:
+ - CYBER: 192.168.4.0/24
+ - SYS255-WAN: 10.0.17.0/24; default gateway @ 10.0.17.2
+ - STUDENTX: 10.0.5.0/24; default gateway @ 10.0.5.2
+The lab only ever required us to configure the last two networks, the student LAN and the class WAN.  On the LAN, each student had one end-device running windows 10 called "wks01" at IP 10.0.5.100.  On the WAN, each student had a connecting IP addres of 10.0.17.1XX, where XX was replaced by the instructor-assigned station number.  Using the options porvided in fw01, the WAN was assigned to "em0", virtually cabling it to that interface, and the LAN was assigned to "em1"  From there, IP addresses were assigned to using option 2 on the pfsense web terminal:
+ - WAN/em0: 10.0.17.1XX, no DHCP, no HTTP
+ - LAN/em1: 10.0.5.2 (the default gateway), no DHCP, no HTTP
+On the end device, wks01, the IP address was set to the 10.0.5.100 address as mentioned above, and the default gateway also set to match the 10.0.5.2 address given above.
 
-
-### Server Configurations
+### GUI Configurations
+The following are the last few configurations as done from the address of the LAN default gateway, 10.0.5.2, in a web browser, ignoring security certificate errors as directed.
+ - hostname: fw1-lenora
+ - domain: lenora.local
+ - Primary DNS: 8.8.8.8 (google's public dns)
+ - Block private networks from entering via "WAN": unchecked
 
 
 ## Technical Terms
@@ -47,6 +60,13 @@ A Local Area Network, or LAN, is a computer network usually consisting of a numb
 
 For more information about WANs, try using [this](https://www.cisco.com/c/en/us/products/switches/what-is-a-lan-local-area-network.html) resource.
 *Cisco Systems, "What is a LAN?", date not given*
+
+
+### Firewall
+A firewall is a piece of technology, usually software-based, that sites between two devices or networks.  It is used to secure one or both sides of the connection by limiting what packets travel between them.  This is done most commonly via a set of simple allow or deny rules, where a packet is either allowed in or dropped/rejected depending upon how it fits certain criteria.  These criteria can be as simple as what IP is sending a packet, or can get much more in-depth and work with protocols and signatures, and beyond.  Firewalls usually come with default setings, though they can be manipulated by their owner to allow or deny certain types of traffic depending upon user needs.
+
+For more information about firewalls, try using [this](https://www.cisco.com/c/en/us/products/security/firewalls/what-is-a-firewall.html) resource.
+*Cisco Systems, "What Is a Firewall?", date not given.*
 
 
 ## Commands
