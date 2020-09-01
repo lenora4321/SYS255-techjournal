@@ -1,6 +1,6 @@
 # Lab 1 - Lab Environment Setup
 
-<img src="Images/Lab1_diagram" alt="lab 1 network diagram" />
+[Server Diagram Provided](https://github.com/lenora4321/SYS255-techjournal/blob/master/Images/Lab1_diagram.png)
 
 ## Points of interest
 
