@@ -1,6 +1,6 @@
 # Lab 1 - Lab Environment Setup
 
-[Server Diagram Provided](https://github.com/lenora4321/SYS255-techjournal/blob/master/Images/Lab1_diagram.png)
+[Click to view provided server diagram](https://github.com/lenora4321/SYS255-techjournal/blob/master/Images/Lab1_diagram.png)
 
 ## Points of interest
 
