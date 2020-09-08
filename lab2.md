@@ -36,7 +36,7 @@ For more information on DNS, try [this](https://www.cloudflare.com/learning/dns/
 
 ### Hostname
 
-### Domain Users
+### Domain Users (vs regular local users)
 
 ## Commands
 
