@@ -6,7 +6,7 @@
 In this lab, several users were added and managed using an Active Directory through Windows Server Manager.  This was useful because normally a new system has to have at least one adminstrator account with outrageous permissions, but managing it with an active directory instead can give sensible admin privledges and manage users remotely.  The following users were added with the given permissions in this lab:
  - lenora.batcher-amd (admin)
  - lenora.batcher (regular user)
-They were both added to a domain called simply "lenora"; however, the admin account, denoted with the -adm after the name, was also added to the Domain Admin group from the Active Directory Users and COmputers Program found on Windows 10.
+They were both added to a domain called simply "lenora"; however, the admin account, denoted with the -adm after the name, was also added to the Domain Admin group from the Active Directory Users and COmputers Program found on Windows 10.  The computer used to control the active directory primarily was the ad01-lenora.batcher, and this is where the Active Directory was configured from.
 
 
 ### DNS
