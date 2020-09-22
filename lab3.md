@@ -41,7 +41,7 @@ For more information, try [this](https://www.efficientip.com/what-is-dhcp-and-wh
 *Efficient iP, "What is DHCP?".  Date not provided.*
 *CertBros, "DHCP Explained | Step by Step". January 4th, 2017*
 
-## Linux
+### Linux
 Linux is an operating system popular on servers and desktops alike for its free open source, and lightweight implementation.  It was created by Linus Torvalds in 1991 and is an descendant of UNIX and a close descendant of Minix.
 
 For more information, try [this](https://www.linux.com/what-is-linux/) resource, or find the source code itself anywhere code repositories are distributed.
@@ -59,6 +59,7 @@ For more information, try [this](https://www.linux.com/what-is-linux/) resource,
 "Password".  Change the password for a given username.  If there is already a password set, it will likely ask for the old password.  Will require password to be retyped for certainty.
 
 ### systemctl restart network
+"System Control" setting to restart the network service.  Should be done after an update is made to netowrk configurations.
 
 ### usermod <groupname> <username>
 "User Modify".  Add the given user to the given group.  In CentOS, the admin user is called "wheel".
