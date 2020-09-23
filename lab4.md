@@ -34,8 +34,8 @@ Other:
  
 ### Lease time alteration
 In DHCP, IP addresses are only leased for a set amount of time.  one challenge in the lab was to change this time to be a default of 1 hour and a maximum of 4 hours. This was accomplished by editing the /etc/dhcp/dhcpd.conf file yet again and adding tw lines above the initial entry:
-```default-lease-time 3600;
-max-lease-time 14400;```
+```default-lease-time 3600;```
+```max-lease-time 14400;```
 I then had to refresh the services and reboot the windows client, as well as release and renew the IP address.  It is also good to note that the lease time is taken in seconds, so that is why the values may seem so large.  To view the altered lease times, I ran ipconfig /all. 
 
 [Click to view dhcpd.conf final state](https://github.com/lenora4321/SYS255-techjournal/blob/master/Images/DHCP_conf.jpg)
