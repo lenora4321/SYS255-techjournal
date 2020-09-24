@@ -10,5 +10,6 @@ Please select the document pertaining to the lab you are looking for below, or i
  
  ## Supplementary Resources:
  - [Linux File Permissions](https://github.com/lenora4321/SYS255-techjournal/blob/master/Supplemental%20Entires/Linux%20File%20and%20Directory%20Permissions.md)
+ - [Securing CentOS SSH (root block)](https://github.com/lenora4321/SYS255-techjournal/blob/master/Supplemental%20Entires/Securing%20CentOS%20SSH.md)
  
 
