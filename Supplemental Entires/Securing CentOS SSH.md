@@ -1,4 +1,4 @@
-# Supplement 1 - Securing CentOS SSH (root block)
+# Supplement 2 - Securing CentOS SSH (root block)
 
 ## Overview
 In a world of remote connections and security, it is best practice to make it so that the root user (the one with the highest permissions of all on a device) cannot be accessed by anyone other than someone directly at the system itself.  This prevents against a number of cyber attacks and is implemented on Linux CentOS quite easily.  See the steps below.
