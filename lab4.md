@@ -1,4 +1,4 @@
-# Lab 3 - DHCP Server Configuration
+# Lab 4 - DHCP Server Configuration
 
 ## Points of interest
 

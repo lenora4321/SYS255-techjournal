@@ -1,4 +1,4 @@
-# Lab 1 - Lab Environment Setup
+# Lab 2 - Active Directory and DNS
 
 ## Points of interest
 
