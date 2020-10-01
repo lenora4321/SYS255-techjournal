@@ -20,8 +20,10 @@ In the Active Directory Users and Computers panel opened up from the Server Mana
 To add actual settings, called in sum a "policy", the Group Policy Management panel was opened from Server Manager.  A group policy object was then added to the SYS255 OU and set to contain only the new custom-desktop group and domain computers (authenticated users was removed).  The last step before actual policy addition was to deny domain users from applying the group policy.
 
 #### User policy - recycle bin removal
+As practice, a single policy was added to the user configuration using the Group Policy Management Editor opened via right click on the desired OU).  Under the desktop settings, the option for "Remove Recyle Bin icon from Desktop" was enabled.  This made it so that when the users from the "custom-desktop" group login to a system, the Recycle Bin icon normally found in the top left hand corner was no longer present.
 
 #### Computer policy - last login data removal
+As practice a single policy was added to the computer configuration using the Group Policy Management Editor.  Under the security options, the setting for "Interactive logon: Don't display last signed-in" was set to enabled.  This prevents the last signed-in user from being shown on the login screen, which is both less annoying and is more secure since a new user will not know who was there before them. 
 
 ## Technical Terms
 
