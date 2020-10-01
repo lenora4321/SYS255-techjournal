@@ -60,7 +60,7 @@ For more information on Domain Users, try [this](https://kb.iu.edu/d/anbn) resou
 
 ## Commands
 
-### nslookup
+```nslookup```
 This command attempts to retrieve the IP address of a provided hostname, whether from DNS cache or via DNS lookup.
 
 *Other useful commands may be found in [lab1](https://github.com/lenora4321/SYS255-techjournal/blob/master/lab1.md) commands section.*

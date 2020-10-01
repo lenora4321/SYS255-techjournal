@@ -60,7 +60,7 @@ For more information on SAM Accounts and SIDs, try [this](https://www.windows-ac
 
 ## Commands
 
-### gpresult
+```gpresult```
 "Group polict result, resultant set of policies".  Shows the set of group policy settings applied to the remote user/computer, specified by SAM name.
 
 **/r** Displays RSoP summary data (overview).
@@ -70,10 +70,10 @@ For more information on SAM Accounts and SIDs, try [this](https://www.windows-ac
 For more information about gpresult and its options, try [this](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/gpresult) resource.
 *Ross, Elizabeth, et al.  "gpresult".  Microsoft Docs, October 16, 2017*
 
-### gpedit
+```gpedit```
 "Group policy edit".  Edit the group policy settings on the local computer/user.  Not available for anything less than Windows 10 Pro versions.
 
-### gpupdate
+```gpupdate```
 "Group policy update".  Updated the group policies on a machine so that the settings are up to date with the active directory.
 
 **/force** Forces the updates when the command is run instead of waiting until an optimal time.

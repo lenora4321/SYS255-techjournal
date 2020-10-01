@@ -68,13 +68,13 @@ For an overview of DHCP and its description, please see [lab 3](https://github.c
  
 ## Commands
 
-### sudo -i
+```sudo -i```
 "Super User Do, login".  Use elevated permissions via logging in as the target user.  Allows a person to run as sudo for an extended period of time instead of having to type "sudo" before each command.
 
-### nano
+```nano```
 Nano is a file editor similar to VI(M).  It can be used to type, edit, and re-write files, and allows for saving them to a file location.  It is newer than VI and as such can use the arrow keys, which makes many users preffer this editor over VI.
 
-### systemctl
+```systemctl```
 "System Control".  This command is used to send insturctions to the system regarding services, like the netowrk or DHCP services.  Below are some specific commands having to do with DHCP.
 
 **start dhcpd** Begin the dhcp service, assume it was not previously running on the device.
@@ -85,7 +85,7 @@ Nano is a file editor similar to VI(M).  It can be used to type, edit, and re-wr
 
 The systemd control program systemctl is how you start, stop and status services.
 
-### firewall-cmd
+```firewall-cmd```
 "Firewall Command".  This is a command used to invoke Linux's firewall command line client, specifically for the firewalld daemon.  Per the man pages of any Linux system, "It provides interface to manage runtime and permanent configuration \[of the firewall\]".
 
 **--add-service=dhcp** Add a service to firewall config.  Examples: DHCP, HTTP, etc.
@@ -96,7 +96,7 @@ The systemd control program systemctl is how you start, stop and status services
 
 **--list-all** List details of firewall, including open ports and interfaces, as well as services.
 
-### ipconfig
+```ipconfig```
 Used to display information about layer 3 IP configuration, including interfaces and addresses.  When used in conjunction with options, this can also be used to alter IP connections.
 
 **/all** Show long version of IP configurations, including lease times.

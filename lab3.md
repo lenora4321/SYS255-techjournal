@@ -49,47 +49,47 @@ For more information, try [this](https://www.linux.com/what-is-linux/) resource,
 
 ## Commands
 
-### nmtui
+```nmtui```
 "Network Manager Text User Interface".  A visual interface for configuring network settings on Linux.  Functions in the command line with simple prompts and options allowing for activities like setting a static IP or connecting to DHCP.
 
-### adduser <name>
+```adduser <name>```
 "Add user".  Create a new user of the given name.  User will be added to a group of their own name, but no other groups.
 
-### passwd <name>
+```passwd <name>```
 "Password".  Change the password for a given username.  If there is already a password set, it will likely ask for the old password.  Will require password to be retyped for certainty.
 
-### systemctl restart network
+```systemctl restart network```
 "System Control" setting to restart the network service.  Should be done after an update is made to netowrk configurations.
 
-### usermod <groupname> <username>
+```usermod <groupname> <username>```
 "User Modify".  Add the given user to the given group.  In CentOS, the admin user is called "wheel".
 
 **-a** Append, an option used to add the new user to the group, else will attempt to remove that user from the group
 
 **-G** Option that allows for multiple groups, separated by commas.
 
-### cd <directory>
+```cd <directory>```
 "Change Directory".  Similar to a folder in other operating systems, a directory is a container for other files.  Some common directories in Linux are /etc, /dev, and /home.  This command allows you to shift between directories by specifying the anme of a directoy after the command.  Be use to know whether you are using a direct or relative path.
 
-### ls
+```ls```
 "List".  Used to show the files and subdirectories within a directory.  If a directory is not specified, it will use the current working directory.
 
-### man <command>
+```man <command>```
 "Manual".  This is used to display the details and instructions to use any given command.  Simply type this command followed by the name of the command you wish to learns more about, and the official manual page will display.  Tip: "q" will allow you to quit from the man pages.
 
-### cat <file>
+```cat <file>```
 "Concatinate".  Used to display the contents of a file.  Can also be used to edit the file.
 
-### pwd
+```pwd```
 "Print Working Directory".  Prints to console the current directory that you are in.  Serves as a "you are here" marker.
 
-### mkdir <name>
+```mkdir <name>```
 "Make Directory".  Create a new directory of the specified name in the current directory.
 
-### tree
+```tree```
 The tree command prints the contents of directories in a tree-like format, which can be more visually easier to work with than the traditional text format.  Starts at the current directory and prints supdirectories and files.
 
-### yum
+```yum```
 "Yellowdog Updater, Modified".  A tool for installing and maintaining packages originally developed for Yellowdog Linux.
 
 For more information, try [this](https://webhome.phy.duke.edu/~rgb/General/yum_HOWTO/yum_HOWTO/yum_HOWTO-1.html) resource.
