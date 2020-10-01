@@ -64,9 +64,8 @@ For more information, try [this](https://www.linux.com/what-is-linux/) resource,
 ```usermod <groupname> <username>```
 "User Modify".  Add the given user to the given group.  In CentOS, the admin user is called "wheel".
 
-**-a** Append, an option used to add the new user to the group, else will attempt to remove that user from the group
-
-**-G** Option that allows for multiple groups, separated by commas.
+ - *-a* Append, an option used to add the new user to the group, else will attempt to remove that user from the group
+ - *-G* Option that allows for multiple groups, separated by commas.
 
 ```cd <directory>```
 "Change Directory".  Similar to a folder in other operating systems, a directory is a container for other files.  Some common directories in Linux are /etc, /dev, and /home.  This command allows you to shift between directories by specifying the anme of a directoy after the command.  Be use to know whether you are using a direct or relative path.

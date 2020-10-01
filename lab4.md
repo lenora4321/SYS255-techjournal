@@ -77,30 +77,22 @@ Nano is a file editor similar to VI(M).  It can be used to type, edit, and re-wr
 ```systemctl```
 "System Control".  This command is used to send insturctions to the system regarding services, like the netowrk or DHCP services.  Below are some specific commands having to do with DHCP.
 
-**start dhcpd** Begin the dhcp service, assume it was not previously running on the device.
-
-**status dhcpd** Check the status of the DHCP service.  Displays whether the service, what messages were sent out and with what devices the server has communicated recently.
-
-**enable dhcpd** Set up and enable DHCP via systemlink.
+ - *start dhcpd* Begin the dhcp service, assume it was not previously running on the device.
+ - *status dhcpd* Check the status of the DHCP service.  Displays whether the service, what messages were sent out and with what devices the server has communicated recently.
+ - *enable dhcpd* Set up and enable DHCP via systemlink.
 
 The systemd control program systemctl is how you start, stop and status services.
 
 ```firewall-cmd```
 "Firewall Command".  This is a command used to invoke Linux's firewall command line client, specifically for the firewalld daemon.  Per the man pages of any Linux system, "It provides interface to manage runtime and permanent configuration \[of the firewall\]".
-
-**--add-service=dhcp** Add a service to firewall config.  Examples: DHCP, HTTP, etc.
-
-**--permanent** Make a configuration change permanent, as opposed to just changing the runtime configuration.
-
-**--reload** Reload the firewall service; conceivably used to shift permantant changes out into runtime by restarting runtime.
-
-**--list-all** List details of firewall, including open ports and interfaces, as well as services.
+ - *--add-service=dhcp* Add a service to firewall config.  Examples: DHCP, HTTP, etc.
+ - *--permanent* Make a configuration change permanent, as opposed to just changing the runtime configuration.
+ - *--reload* Reload the firewall service; conceivably used to shift permantant changes out into runtime by restarting runtime.
+ - *--list-all* List details of firewall, including open ports and interfaces, as well as services.
 
 ```ipconfig```
 Used to display information about layer 3 IP configuration, including interfaces and addresses.  When used in conjunction with options, this can also be used to alter IP connections.
 
-**/all** Show long version of IP configurations, including lease times.
-
-**/release**  Relinquish a leased IP address from DHCP server.
-
-**/renew**  Request a new IP address from DHCP server.
+ - */all* Show long version of IP configurations, including lease times.
+ - */release*  Relinquish a leased IP address from DHCP server.
+ - */renew*  Request a new IP address from DHCP server.

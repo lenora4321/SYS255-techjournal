@@ -76,13 +76,13 @@ For more information about firewalls, try using [this](https://www.cisco.com/c/e
 ```tracert```
 A command used to track and report the hops taken to get from one system to another.
 
-**-d** An option that takes a whole positive number as a parameter to specify the maximum number of hops to be attempted and recorded. *Windows*
+ - *-d* An option that takes a whole positive number as a parameter to specify the maximum number of hops to be attempted and recorded. *Windows*
 
 
 ```ping```
 A ping command is used to test connectivity.  It sends simple packets between two systems using the ICMP protocol.  It can then keep track of how many packets made it to and from the destination, or whether the destination was reachable at all.
 
-**-n** An option that takes a whole positive number as a parameter to specify the number of packets to be sent and counted. *Windows*
+ - *-n* An option that takes a whole positive number as a parameter to specify the number of packets to be sent and counted. *Windows*
 
 ```whoami```
 A command that returns the username of the current user of a system. This my be comprised of a system name and a hostname, depending upon configurations and settings.
