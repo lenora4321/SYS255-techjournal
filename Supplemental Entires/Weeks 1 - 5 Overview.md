@@ -29,7 +29,7 @@ In this lab, the firewall was configured to connect the LAN to the outside world
  - fw01 was virtually cabled via interface 1 to the WAN
  - interface 2 of fw01 was virtually cabled to the LAN
 
-The fw01 workstation was then fired up and logged into via the [default passwords]().  The next step was to connect the correct networks to the correct interfaces from within the firewall.  This was done via option 1 on the fw01 firewall menu.  VLANS were not set up at this time  Option 2 was then used to set the IP addresses, including their subnet mask.  Note that the default gateway/upstream IP for the WAN was ```10.0.17.2```.
+The fw01 workstation was then fired up and logged into via the [default passwords](https://github.com/lenora4321/SYS255-techjournal/blob/master/Images/Default_passwords.jpg).  The next step was to connect the correct networks to the correct interfaces from within the firewall.  This was done via option 1 on the fw01 firewall menu.  VLANS were not set up at this time  Option 2 was then used to set the IP addresses, including their subnet mask.  Note that the default gateway/upstream IP for the WAN was ```10.0.17.2```.
 
  - em0 was set to the WAN address ```10.0.17.100/24```.  Note that this is the IP assigned to the particular student for their IP address on the WAN.
  - em1 was set to the LAN address ```10.0.5.2/24```.  Note that this was the IP assigned to the default gateway of the LAN later on.
