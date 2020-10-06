@@ -63,6 +63,7 @@ For an overview of DHCP and its description, please see [lab 3](https://github.c
  *efficient iP, "What is DHCP Lease?". Date not provided.*
 
  - DHCP reservation: a DHCP reservation is a feature of DHCP wherein a device can be set up to always get the same IP address form the server, whereas other addresses may change.  This is helpful for devices that are hosting services since they might be better suited with a static IP address, but are still involved in the DHCP process.
+ 
  For more information, try [this](https://www.stephenwagner.com/2019/05/07/static-ip-vs-dhcp-reservation/#:~:text=A%20DHCP%20Reservation%20is%20a,server%20for%20an%20IP%20address.) resource.
  *Stephen Wagner, "Static IP vs DHCP Reservation".  May 7th, 2019.*
  
