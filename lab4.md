@@ -15,7 +15,7 @@ A single DHCP connection was then specified with the following details by editin
 
 The service was then started and enabled.
 
-### DHCP firewal configuration
+### DHCP firewall configuration
 After DHCP was set up on the remote system, the firewall-cmd command was invoked to add the new dhcp service (permanently), and reload the service.  For specifics on how to do this, see the commands section below.
 
 ### Windows client configuration
