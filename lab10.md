@@ -1,4 +1,4 @@
-# Lab 8 - Powershell Scripting
+# Lab 10 - Powershell Scripting
 
 ## Points of interest
 
