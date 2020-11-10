@@ -8,6 +8,8 @@ Most of the steps I followed to make a new blog site were found off of the inter
 
  - [Installation on CentOS7](https://www.liquidweb.com/kb/how-to-install-wordpress-on-centos-7/).  *Michelle Almendarez, "How to Install WordPress on CentOS7". Liquid Web, October 26, 2020.*
  - [WordPress CLI installation](https://wp-cli.org/#installing).  *WP CLI, "Installtion".  Date not provided.*
+ - [LAMP installation](https://www.liquidweb.com/kb/install-lamp-stack-centos-7/).  *Jake Wright, "How To Install the LAMP Stack on CentOS 7". Liquid Web, September 30, 2020.*
+ - [PHP7 upgrade centos](https://linuxconfig.org/how-to-install-or-upgrade-to-php-7-on-centos-linux-server). *Admin, "How to install or updgrade to PHP 7 on CentOS7 Linux Server". LinuxConfig.org, July 5, 2019.*
 
 ## Setup steps for a new web linux box (blog01)
 Below are a few short steps to create the blog01 machine with a LAMP stack to support WordPress.  Note that these are general instructions, not step-by-step.  Please refer to [lab 3](https://github.com/lenora4321/SYS255-techjournal/blob/master/lab3.md) and [lab 8](https://github.com/lenora4321/SYS255-techjournal/blob/master/lab8.md), as well as the resources above, for more specific instructions.
