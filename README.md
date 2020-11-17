@@ -10,7 +10,8 @@ Please select the document pertaining to the lab you are looking for below, or i
  6. [lab 7](https://github.com/lenora4321/SYS255-techjournal/blob/master/lab7.md) Server Core and Remote Administrator Tools
  7. [lab 8](https://github.com/lenora4321/SYS255-techjournal/blob/master/lab8.md) Apache Web Server
  8. [lab 9](https://github.com/lenora4321/SYS255-techjournal/blob/master/lab9.md) Bash Scripting
- 8. [lab 10](https://github.com/lenora4321/SYS255-techjournal/blob/master/lab10.md) PowerShell Scripting
+ 9. [lab 10](https://github.com/lenora4321/SYS255-techjournal/blob/master/lab10.md) PowerShell Scripting
+ 10. [lab 11](https://github.com/lenora4321/SYS255-techjournal/blob/master/lab11.md) Automation
  
  ## Supplementary Resources:
  - [Linux File Permissions](https://github.com/lenora4321/SYS255-techjournal/blob/master/Supplemental%20Entires/Linux%20File%20and%20Directory%20Permissions.md)
