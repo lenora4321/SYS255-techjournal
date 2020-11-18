@@ -3,12 +3,31 @@
 ## Points of interest
 
 ### Configuration of clone boxes
+The three Linux boxes in this lab were configured similar to the initial configuration detailed in [lab 3](https://github.com/lenora4321/SYS255-techjournal/blob/master/lab3.md).  Each was assigned a static IP address with corresponding gateway, DNS, and search domains, as well as a hostname.  The specific names and IP addresses are detailed below:
+ 
+ - 10.0.5.70 (hostname: clone1)
+ - 10.0.5.71 (hostname: clone2)
+ - 10.0.5.72 (hostname: clone3)
 
- - edit of ```/etc/sudoers``` to allow escalation to root without password for those within wheel
+Each of the systems was also modified so that escalation to root could be done without password, given that the logged-in user was a member of the wheel group.  To do this, the ```/etc/sudoers``` file was altered slightly (read comments in said file for more details).  Each system was also given a single named user, "lenora", which was added to the wheel group.  Note that these systems, though connected to the LAN, were not joined to the active directory using realmd.
 
 ### RSA key creation
+To allow for more secure and robust authentication between the clone machines, clone1 was used as the controller and generated asymmetric SSH keys to be shared with the other two clones.  To do this, ```ssh-keygen``` and ```ssh-copy-id``` were used (as detailed in the commands section) so that the public key was copied to the .ssh/ directory of clone2 and clone3, while the private key remained on clone1.  After this, the latter clones could be connected to via SSH without provideing a password, just the passphrase used for the key.
+
+To streamline the process even more, the ```ssh-agent``` was used to cache the passphrase between two connected systems for a set time of one hour, by utilizing the ```ssh-add``` command as detailed in the commands section below.
 
 ### Automation
+Throughout this lab, both pssh and ansible were used to automate a number of simple test functions on clone2 and clone3.  For more details about either method, see their respective entires in the sections below.
+
+Ansible was used to automate:
+ - ping
+ - adding port 8080 to firewall
+ - install nginx and create a test file to curl from
+
+PSSH was used to automate:
+ - uptime
+ - uname -a
+ - installation and running of ```tree```
 
 ## Technical Terms
 
