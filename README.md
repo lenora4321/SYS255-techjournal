@@ -12,6 +12,7 @@ Please select the document pertaining to the lab you are looking for below, or i
  8. [lab 9](https://github.com/lenora4321/SYS255-techjournal/blob/master/lab9.md) Bash Scripting
  9. [lab 10](https://github.com/lenora4321/SYS255-techjournal/blob/master/lab10.md) PowerShell Scripting
  10. [lab 11](https://github.com/lenora4321/SYS255-techjournal/blob/master/lab11.md) Automation
+ 11. [lab 13](https://github.com/lenora4321/SYS255-techjournal/blob/master/lab13.md) File Transfer
  
  ## Supplementary Resources:
  - [Linux File Permissions](https://github.com/lenora4321/SYS255-techjournal/blob/master/Supplemental%20Entires/Linux%20File%20and%20Directory%20Permissions.md)
